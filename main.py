@@ -27,7 +27,7 @@ def configure_routes():
 def configure_templates():
     fastapi_chameleon.global_init('templates')
 
-def configure_db(dev_mode: bool):
+def configure_db(dev_mode: bool = False):
     file = (Path(__file__).parent / 'db' / 'pypi.sqlite').absolute()
     db_session.global_init(file.as_posix())
 
