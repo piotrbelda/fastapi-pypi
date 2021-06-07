@@ -13,7 +13,7 @@ def main():
     configure(dev_mode=True)
     uvicorn.run(app, host='127.0.0.1', port=8000)
 
-def configure(dev_mode: bool):
+def configure(dev_mode: bool = False):
     configure_routes()
     configure_templates()
     configure_db(dev_mode)
