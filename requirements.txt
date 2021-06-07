@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+aiofiles
+python-multipart
+SQLAlchemy==1.4.0b2
+git+https://github.com/mikeckennedy/fastapi-chameleon
+progressbar2
+python-dateutil
+passlib
